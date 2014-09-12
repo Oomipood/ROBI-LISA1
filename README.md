@@ -1,7 +1,7 @@
 JOONE-ROBI
 ==========
 
-Joonejälgimis ROBI
+Joonejälgimis ROBI - example code
 
 Project details: http://www.oomipood.ee/product/robi/
 
