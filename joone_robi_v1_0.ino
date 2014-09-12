@@ -5,7 +5,7 @@ const int mot1f = 6;
 const int mot1b = 5;
 const int mot2f = 11;
 const int mot2b = 10;
-int mot_speed = 120; //motors speed
+int mot_speed = 110; //motors speed
 int brake_k = 4; //BRAKE
 
 //LOGICS VARIABLES
@@ -25,7 +25,6 @@ void setup(){
     pinMode(mot1b, OUTPUT);
     pinMode(mot2f, OUTPUT);
     pinMode(mot2f, OUTPUT);
-    Serial.begin(9600);
     
     delay(2000);
     motors_forward();
@@ -37,44 +36,27 @@ void loop(){
     boolean left = digitalRead(leftSensor);
     boolean right = digitalRead(rightSensor);
     
-    //Serial.print("Left sensor is: ");
-    //Serial.println(left);
-    //Serial.print("Right sensor is: ");
-    //Serial.println(right);
-    //delay(1000);
     
     if (left == 0 & right == 0){ 
       
       motors_forward();
-      //delay(1);
-      //Serial.println("going forward");
-      //delay(1000);
       
     }
     if (left == 1 & right == 0){
       
       motors_left();
       delay(20);
-      //Serial.println("turning left");
-      //delay(1000);
       
     }
     if (left == 0 & right == 1) {
       
       motors_right();
       delay(20);
-      //Serial.println("turning right");
-      //delay(1000);
       
     }
     if (left == 1 & right == 1) {
       
       motors_forward();
-      //delay(100);
-      //motors_left();
-      //delay(650);
-      //Serial.println("stopping...");
-      //delay(1000);
       
     } 
   
