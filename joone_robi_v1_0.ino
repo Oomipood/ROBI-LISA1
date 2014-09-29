@@ -6,18 +6,10 @@ const int mot1b = 5;
 const int mot2f = 11;
 const int mot2b = 10;
 int mot_speed = 110; //motors speed
-int brake_k = 4; //BRAKE
 
 //LOGICS VARIABLES
-int errorLED = 13;
 int leftSensor = 2;
 int rightSensor = 3;
-
-int stateForward = 0;
-int stateLeft = 1;
-int stateRight = 2;
-
-int state = stateForward;
 
 void setup(){
   
