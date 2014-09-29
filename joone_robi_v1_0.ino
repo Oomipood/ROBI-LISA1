@@ -24,7 +24,7 @@ void setup(){
     pinMode(mot1f, OUTPUT);
     pinMode(mot1b, OUTPUT);
     pinMode(mot2f, OUTPUT);
-    pinMode(mot2f, OUTPUT);
+    pinMode(mot2b, OUTPUT);
     
     delay(2000);
     motors_forward();
